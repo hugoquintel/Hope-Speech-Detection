@@ -1,7 +1,7 @@
 ## Hope Speech detection
 
 ### Introduction
-This is the implementation of the paper *Choosing the Right Language Model for the Right Task* as part of the [Iberlef HOPE 2024 shared tasks](https://codalab.lisn.upsaclay.fr/competitions/17714). The full paper can be accessed through this [link](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj1lbfX54KPAxXgaPUHHV9iPAQQFnoECBkQAQ&url=https%3A%2F%2Fceur-ws.org%2FVol-3756%2FHOPE2024_paper3.pdf&usg=AOvVaw10GVu5qjGVJpoZHNH7Vgv7&opi=89978449).
+This is the implementation of the paper *Choosing the Right Language Model for the Right Task* as part of the [Iberlef HOPE 2024 shared task](https://codalab.lisn.upsaclay.fr/competitions/17714). The full paper can be accessed through this [link](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj1lbfX54KPAxXgaPUHHV9iPAQQFnoECBkQAQ&url=https%3A%2F%2Fceur-ws.org%2FVol-3756%2FHOPE2024_paper3.pdf&usg=AOvVaw10GVu5qjGVJpoZHNH7Vgv7&opi=89978449).
 
 There are 2 tasks, whose goal is to detect hope speech given an input text:
 - **Task 1 - Hope for Equality, Diversity, and Inclusion**: This task aims to detect hope speech, focusing on promoting the inclusion of vulnerable groups and ultimately achieving Equality, Diversity, and Inclusion. The dataset for this task is only Spanish.
