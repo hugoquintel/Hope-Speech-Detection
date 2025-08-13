@@ -35,7 +35,7 @@ The data files are in .csv format. Below is the format of the dataset for each t
 | ... | Hope | Realistic Hope | ... |
 | ... | Hope | Unrealistic Hope | ... |
 
-The id and text columns are input IDs and texts, respectively. For task 1, the target column is "category", containing 2 labels: nhs (not hope) or hs (hope), and for task 2, the target columns are "binary", which is either "Not Hope" or "Hope", and "multiclass", including Not Hope, Generalized Hope, Realistic Hope, or Unrealistic Hope. Sample data can be viewed in the [data folder](https://github.com/hugoquintel/git_test/tree/master/data).
+The id and text columns are input IDs and texts, respectively. For task 1, the target column is "category", containing 2 labels: nhs (not hope) or hs (hope), and for task 2, the target columns are "binary", which is either "Not Hope" or "Hope", and "multiclass", including Not Hope, Generalized Hope, Realistic Hope, or Unrealistic Hope. Sample data can be viewed in the [data folder](https://github.com/hugoquintel/Hope-Speech-Detection/tree/main/data).
 
 The structure of the data folder should be the following:
 
