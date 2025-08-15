@@ -22,9 +22,9 @@ def get_labels(args, df):
 def preprocess_data(args, data_df, tokenizer, labels_to_ids):
     data_id = data_df['id'].tolist()
     tokenizer_output = tokenizer(data_df['text'].to_list(), padding='max_length',
-                                 truncation=True, max_length=args.PLM_MAX_TOKEN, return_tensors='pt')
-    input_ids = tokenizer_output.input_ids.tolist()
-    attention_mask = tokenizer_output.attention_mask.tolist()
+                                 truncation=True, max_length=args.PLM_MAX_TOKEN)
+    input_ids = tokenizer_output.input_ids
+    attention_mask = tokenizer_output.attention_mask
     label = data_df['category'].map(labels_to_ids).tolist() if args.TASK == 1 else \
             data_df[args.CLS_TYPE].map(labels_to_ids).tolist()
     data_dict = {'data_id': data_id, 'input_ids': input_ids,
