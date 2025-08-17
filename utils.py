@@ -21,7 +21,7 @@ def train_step(args, plm, cls, loss_function, optimizer, dataloader):
         loss.backward()
         optimizer.step()
         loss_total += loss
-        if (batch_index + 1) % args.PRINT_BATCH == 0:
+        if (batch_index+1)%args.PRINT_BATCH == 0:
             print(f'Loss after {batch_index + 1} batches: {loss:.5f}')
     loss_average = loss_total / len(dataloader)
     return loss_total, loss_average
