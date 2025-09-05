@@ -104,9 +104,9 @@ def run():
 
     # record user's input arguments
     log_hyperparams(args, info_path)
-    best_accuracy, best_epoch = 0, 0
     
     # start executing
+    best_accuracy, best_epoch = 0, 0
     for epoch in tqdm.trange(args.EPOCHS, file=sys.stdout):
         print(f'\n\nEpoch {epoch}:')
         # train

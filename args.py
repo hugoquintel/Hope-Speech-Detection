@@ -1,5 +1,6 @@
 import torch
 import argparse
+from distutils.util import strtobool
 
 # all the arguments the user can input
 def get_arguments():
@@ -34,21 +35,21 @@ def get_arguments():
                         help='Path to data directory')
     parser.add_argument('--DATA_FOLDER', type=str,
                         help='Name of the dataset folder')
-    parser.add_argument('--PLOT_CONFMAT', type=bool, default=False,
+    parser.add_argument('--PLOT_CONFMAT', type=strtobool, default=False,
                         help='Show confusion matrix at each epoch, recommend to set to False when executing in terminal')
     parser.add_argument('--FIG_SIZE', type=int, default=4,
                         help='The height and width of confusion matrix (based on matplotlib)')
-    parser.add_argument('--SAVE_MODEL', type=bool, default=True,
+    parser.add_argument('--SAVE_MODEL', type=strtobool, default=True,
                         help='Save the model at each epoch while training')
     parser.add_argument('--SAVE_PATH', type=str, default='saved_models',
                         help='Create a folder (if not exist) to store all the saved models')
-    parser.add_argument('--EXPORT_PREDICTION', type=bool, default=False,
+    parser.add_argument('--EXPORT_PREDICTION', type=strtobool, default=False,
                         help='Export the prediction result (.csv)')
     parser.add_argument('--PREDICTION_PATH', type=str, default='prediction',
                         help='Create a folder (if not exist) to store the prediction file')
-    parser.add_argument('--PREDICTION_PER_EPOCH', type=bool, default=False,
+    parser.add_argument('--PREDICTION_PER_EPOCH', type=strtobool, default=False,
                         help='Export the prediction result at each epoch, if no then just at the latest epoch')
-    parser.add_argument('--TEST_BEST_MODEL', type=bool, default=True,
+    parser.add_argument('--TEST_BEST_MODEL', type=strtobool, default=True,
                         help='Evaluate the performance of the best model on the valset (SAVE_MODEL must be True)')
     parser.add_argument('--BEST_PATH', type=str, default='best_prediction',
                         help='Create a folder (if not exist) to store the best prediction file')
